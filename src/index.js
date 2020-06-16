@@ -21,3 +21,8 @@ $('a[href^="#"]').on('click', function (event) {
 initSr();
 initTilt();
 
+$("#arrowdown").click(function () {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $('#about').offset().top
+  }, 2000);
+});
